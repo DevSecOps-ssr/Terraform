@@ -1,4 +1,4 @@
- {
+ec2_output = {
   "mangodb" = {
     "ami" = "ami-0220d79f3f480ecf5"
     "arn" = "arn:aws:ec2:us-east-1:771282542203:instance/i-003756a8d1168af4c"
