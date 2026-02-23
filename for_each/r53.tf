@@ -8,11 +8,11 @@ resource "aws_route53_record" "www" {
   records = [each.value.private_ip]
 }
 
-resource "aws_route53_record" "www" {
-  zone_id = var.zone_id
-  #interpolation
-  name    = "${each.key}.${var.domain_name}" 
-  type    = "A"
-  ttl     = 1
-  records = [lookup(aws_instance.example, frontend).public_ip]
-}
+# resource "aws_route53_record" "www" {
+#   zone_id = var.zone_id
+#   #interpolation
+#   name    = "${each.key}.${var.domain_name}" 
+#   type    = "A"
+#   ttl     = 1
+#   records = [lookup(aws_instance.example, frontend).public_ip]
+# }
