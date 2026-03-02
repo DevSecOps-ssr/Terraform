@@ -7,7 +7,7 @@ variable "env" {
 }
 
 variable "sg_ids" {
-    default = ["sg-076ec9ad23dab2b28"]
+    default = ["sg-0ccccfdaa5d12d606"]
 }
 
 variable "component" {

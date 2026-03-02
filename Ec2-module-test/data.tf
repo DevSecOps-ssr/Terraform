@@ -17,7 +17,3 @@ data "aws_ami" "joindevops" {
     values = ["hvm"]
   }
 }
-
-data "aws_instance" "terraform_instance" {
-  instance_id = "i-0086abb432e54bdb9"
-}
